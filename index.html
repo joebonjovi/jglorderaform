@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+	
+    <head>
+		<title>Order a Form</title>
+<script>
+function modal(){
+if(document.getElementById('name', 'email', 'phone', 'want','basicOrAdvanced').value != ""){
+alert('Thank you for taking the time to order!  Click OK/Close to continue.');   
+}
+}
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+<style>
+.sa input{
+margin: 25px;
+padding: 10px;
+margin-left:  40px;
+
+
+
+    }
+
+    .fullapp{
+width: 100%;
+background: linear-gradient(to right, red, orange);
+margin-left: 715px;
+padding: 45px;
+max-width: 360px;
+margin: 0 auto;
+border: solid 5px white;
+margin-top: 100px;
+
+
+    }
+
+    body{
+background-color: limegreen;
+
+    }
+
+
+    .label{
+margin-left: 15px;
+
+    }
+
+	.sub{
+	width: 100px;
+	border-radius: 12px;
+	border: solid white 2px
+	}
+    
+	.fillout input{
+	max-width: 250px;
+	min-width: 250px;
+	width: 100%;
+	border: solid 3px green;
+	}
+	
+</style>
+		
+    </head>
+
+    <body style="font-family: Arial;">
+       
+        <div class="fullapp">
+        <form class="sa" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeYPMecdOAUwoNU8tMkfTpVQWL6lfORimEt0wZw40pSqABL6w/formResponse" onsubmit="modal()">
+			<h2 style="color: blue; outline: solid 5px lawngreen; text-align: center; padding: 10px;">Order a Form</h2>   
+            <br>
+            
+            <div class="fillout">
+		<input type="text" placeholder="Name" required name="entry.1622270869" id="name">
+        <input type="text" placeholder="Email" required name="entry.454953686" id="email">
+		<input type="text" placeholder="Phone" required name="entry.914739185" id="phone">
+        <input type="text" placeholder="What exacty do you want?" required id="want" style="padding-bottom: 50px;" name="entry.919905654">
+				<label for="basicOrAdvanced" style="font-size: 15px;"><strong>Do you want basic or advanced:</strong></label>
+				<br>
+				<echo style="font-size: small;">Basic only has solid colors, no border colors, and no pop up window.<echo>
+					<br>
+		<select name="entry.910835583" id="basicOrAdvanced" required style="margin: 25px; padding: 10px; width: 200px; background-color: coral; border-radius: 10px; border: green solid 3px; margin-left: 80px;">
+			<option>Basic $1</option>
+			<option>Advanced $2</option>
+		</select>	
+
+				</div>
+        <input class="sub" type="submit" style="background-color: lightcoral; margin-left: 125px;">
+        </form>
+	</div>
+	
+ </body>
+</html>
